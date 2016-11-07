@@ -1,0 +1,350 @@
+<!doctype html>
+<head>
+	
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script src="jquery.smooth-scroll.js"></script>
+<!-- <script src="slippry.min.js"></script> -->
+
+
+<script type="text/javascript" src="http://resource.local/samples/singlepage/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<link rel="stylesheet" href="http://resource.local/samples/singlepage/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="http://resource.local/samples/singlepage/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+<link rel="stylesheet" href="http://resource.local/samples/singlepage/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<!-- <script type="text/javascript" src="http://resource.local/samples/singlepage/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script> -->
+<!-- <script type="text/javascript" src="http://resource.local/samples/singlepage/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script> -->
+<!-- <link rel="stylesheet" href="http://resource.local/samples/singlepage/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+<script type="text/javascript" src="http://resource.local/samples/singlepage/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script> -->
+
+	<script>
+			jQuery(document).ready(function(){
+			  	//jQuery('#demo1').slippry();
+
+			  	$(".fancybox-button").fancybox({
+					prevEffect		: 'none',
+					nextEffect		: 'none',
+					helpers : {
+						media : {}
+					}
+				});
+
+			});
+
+			var topMenuHeight= 50;
+			$(function() {
+			    $('a[href*="#"]:not([href="#"])').click(function() {
+			      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			        var target = $(this.hash);
+			        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			         //-topMenuHeight;
+			         //console.log('target.offset().top: ',target.offset().top);
+			         var startY = target.offset().top-topMenuHeight;
+			        if (target.length) {
+			          $('html, body').animate({
+			            scrollTop: startY
+			          }, 500);
+			          return false;
+			        }
+			      }
+			    });
+			 });
+
+		  	function displayMenu() {
+			    var x = document.getElementById("myTopnav");
+			    if (x.className === "topnav") {
+			        x.className += " responsive";
+			    } else {
+			        x.className = "topnav";
+			    }
+			}
+
+
+	</script>
+
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-27364573-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/slippry.css" />
+	
+</head>
+<div id="top">
+ 
+</div>
+
+<body>
+	
+	<div class="nav">
+
+		<ul class="topnav" id="myTopnav">
+		 	<li><a href="#top">Home</a></li>
+	         <li><a href="#portfolio">Portfolio</a></li>
+	         <li><a href="#contact"></a></li>
+		  <!-- <li>
+		  	<a href="#home">Home</a>
+		  </li>
+		  <li>
+		  	<a href="#news">News</a>
+		  </li>
+		  <li>
+		  	<a href="#contact">Contact</a>
+		  </li>
+		  <li>
+		  	<a href="#about">About</a>
+		  </li> -->
+		  <li class="icon">
+		    <a href="javascript:void(0);" onclick="displayMenu()">&#9776;</a>
+		  </li>
+		</ul>
+	</div>
+
+	<div class="mainContent">
+	<!-- <div id="nav">
+	     <ul>
+	         <li><a href="#about">1</a></li>
+	         <li><a href="#portfolio">2</a></li>
+	         <li><a href="#contact">3</a></li>
+	     </ul>
+	</div> -->
+
+	
+		<div id="page1" class="component page page1 ">
+		  	<a  class="smooth"></a>
+
+		    <div class="leftFloat hello">
+			    <h1 class="helloText extraLargeFont myFontBold">Hello.</h1><br/>
+			    <h2 class="introduce myFontBold">I'm Chris</h2><br/>
+			    <h5 class="introduce">Software Developer</h5>
+		    </div>
+
+		       <!--  <div class="leftFloat hello">
+			    <span class="extraLargeFont">Hello</span><br/>
+			    <span class="largeFont">I'm Chris</span><br/>
+			    <span>Software Developer</span>
+		    </div> -->
+
+
+		</div>
+	 
+	<!-- <div id="page2" class="component page page2" >
+	 	<a id="portfolio" class="smooth"></a> -->
+	 		<!-- <section class="demo_wrapper"> -->
+		  		
+			<!-- </section>	 -->
+
+	  	<!-- <div class="rightFloat container">
+
+
+	  		<img src="http://resource.local/samples/singlepage/images/ChatWidgetChatsOnlyPublicChat.png" width="100%">
+		  	<img src="http://resource.local/samples/singlepage/images/ProviderImpressionIconList.png" width="100%">
+		  	<img src="http://resource.local/samples/singlepage/images/QPELobTabNew.png" width="100%">
+		  	<img src="http://resource.local/samples/singlepage/images/RegionalStatus_Tile_thumb.png" width="100%">
+	  	</div> -->
+		 
+
+<!-- 	</div> -->
+
+	<!-- <div id="page2" class="component" >
+	 	<ul id="demo1" >
+			<li><a href="#slide1"><img src="images/QPELobTabNew.png" class="slideImg" alt="This is caption 1 <a href='#link'>Even with links!</a>"></a></li>
+			<li><a href="#slide2"><img src="images/image-2.jpg" class="slideImg" alt="This is caption 2"></a></li>
+			<li><a href="#slide3"><img src="images/image-4.jpg" class="slideImg" alt="And this is some very long caption for slide 3. Yes, really long."></a></li>
+		</ul>
+	</div>
+ -->
+
+		
+	<div id="page3" class="component page page3">
+	  <!-- <a id="software" class="smooth"></a> -->
+
+	  	<div id="about" class="component aboutMe myFontBold" >
+	 		about me
+	 		
+	 		<div  class="bodyText" >
+	 			Duo ut ullum falli disputationi, qui etiam errem corrumpit ad. Te his legere impedit. Mentitum sensibus consetetur mel ei, ad aeterno scribentur mei, duo te mutat sanctus ponderum. Nec ut dicta dicant option. Ad ullum consectetuer vel. Duo fuisset sapientem iracundia cu, eu has minim evertitur.
+
+				Lorem ipsum dolor sit amet, ne paulo dissentiunt vis. Mundi maiestatis per ne, id vix purto soluta quaerendum. Qui eu soluta prodesset. Eos graeci labitur mediocritatem ut. Harum tibique mei ea, vix ut zril mollis detracto, vel te mutat eleifend iudicabit.
+
+				<div >	  		
+		  			<span></span>
+		  			
+		  			<span></span>
+		  			
+		  			<span></span>
+		  		</div>
+
+			</div>
+
+		</div>
+
+	  	<div class="component subPage subPage1">
+	  	 	<div class="leftFloat">	  		
+	  			DEVICES 
+	  		</div>
+	  		<div class="rightFloat container">	  		
+	  			<i class="fa fa-mobile fa-4x" aria-hidden="true"></i>
+	  			<i class="fa fa-tablet fa-4x" aria-hidden="true"></i>
+	  			<i class="fa fa-laptop fa-4x" aria-hidden="true"></i>
+	  		</div>
+	 	 </div>
+
+	 	
+
+	  	<div class="component subPage subPage2">
+	 		SKILLS 
+	 		<div class="rightFloat container" >
+
+	 			<div class="iconBox" >	  		
+		  			JS
+		  		</div>
+
+		  		<div class="iconBox" >	  		
+		  			HTML
+		  		</div>
+
+		 		<div class="iconBox" >	  		
+		  			CSS
+		  		</div>	
+
+		 		<div class="iconBox" >	  		
+		  			CF
+		  		</div>
+
+		  		<div class="iconBox" >	  		
+		  			SQL
+		  		</div>	
+
+		  		<div class="iconBox iconDoubleBox" >	  		
+		  			Node.js
+		  		</div>	
+
+		  		<div class="iconBox iconDoubleBox" >	  		
+		  			Knockout.js
+		  		</div>	
+
+		  		<div class="iconBox iconDoubleBox" >	  		
+		  			JSON
+		  		</div>
+
+		  		<div class="iconBox iconDoubleBox" >	  		
+		  			Java
+		  		</div>
+
+	  		</div>
+	 	 </div>
+
+		<div class="component subPage subPage3">
+	 		Software 
+
+	 		<div class="rightFloat container skills" >
+	 			<div class="iconBox iconLongBox" >	  		
+		  			Android Studio
+		  		</div>
+
+		  		<div class="iconBox" >	  		
+		  			Eclipse
+		  		</div>
+
+		 		<div class="iconBox iconLongBox" >	  		
+		  			Flex Builder
+		  		</div>	
+
+		 		<div class="iconBox iconLongBox" >	  		
+		  			Font Awesome
+		  		</div>
+
+		  		<div class="iconBox iconDoubleBox" >	  		
+		  			PhoneGap
+		  		</div>	
+
+		  		<div class="iconBox iconDoubleBox" >	  		
+		  			Subclipse
+		  		</div>	
+
+		  		<div class="iconBox iconLongBox" >	  		
+		  			Sublime Text
+		  		</div>	
+
+		  		<div class="iconBox iconDoubleBox" >	  		
+		  			Tortoise
+		  		</div>
+
+		  		<div class="iconBox iconDoubleBox" >	  		
+		  			Windows
+		  		</div>
+	  		</div>
+	  		
+	  		 	
+	  	</div>
+	  
+		<!-- <li><a href="#top">top</a></li> -->
+	</div>
+
+	
+	 	<div id="page2" class="component" >
+	 		<a id="portfolio" class="smooth"></a>
+	 		<div class="component subPage ">
+	 			<div class="container gallery">	 
+	 				<a class="fancybox-button" rel="fancybox-button" href="images/ProviderImpressionIconList.png" title="Hospital Hub">
+						<img src="images/ProviderImpressionIconList.png" alt="" />
+					</a>
+					<a class="fancybox-button" rel="fancybox-button" href="images/RegionalStatus_Tile_thumb.png" title="Regional Status">
+						<img src="images/RegionalStatus_Tile_thumb.png" alt="" />
+					</a>
+					<a class="fancybox-button" rel="fancybox-button" href="images/ChatWidgetChatsOnlyPublicChat.png" title="Command Center (Chat Widget)">
+						<img src="images/ChatWidgetChatsOnlyPublicChat.png" alt="" />
+					</a>
+
+		  			<a class="fancybox-button" rel="fancybox-button" href="images/QPELobTabNew.png" title="Quick Patient Entry">
+						<img src="images/QPELobTabNew.png" alt="" />
+					</a>
+					
+		  		</div>
+			</div>
+		</div>
+
+		<div id="page4" class="component page page4">
+	  <a id="contact" class="smooth"></a>
+			   Lorem ipsum dolor sit amet, ne paulo dissentiunt vis. Mundi maiestatis per ne, id vix purto soluta quaerendum. Qui eu soluta prodesset. Eos graeci labitur mediocritatem ut. Harum tibique mei ea, vix ut zril mollis detracto, vel te mutat eleifend iudicabit.
+
+			Duo ut ullum falli disputationi, qui etiam errem corrumpit ad. Te his legere impedit. Mentitum sensibus consetetur mel ei, ad aeterno scribentur mei, duo te mutat sanctus ponderum. Nec ut dicta dicant option. Ad ullum consectetuer vel. Duo fuisset sapientem iracundia cu, eu has minim evertitur.
+
+			Lorem ipsum dolor sit amet, ne paulo dissentiunt vis. Mundi maiestatis per ne, id vix purto soluta quaerendum. Qui eu soluta prodesset. Eos graeci labitur mediocritatem ut. Harum tibique mei ea, vix ut zril mollis detracto, vel te mutat eleifend iudicabit.
+
+			Duo ut ullum falli disputationi, qui etiam errem corrumpit ad. Te his legere impedit. Mentitum sensibus consetetur mel ei, ad aeterno scribentur mei, duo te mutat sanctus ponderum. Nec ut dicta dicant option. Ad ullum consectetuer vel. Duo fuisset sapientem iracundia cu, eu has minim evertitur.
+
+			Lorem ipsum dolor sit amet, ne paulo dissentiunt vis. Mundi maiestatis per ne, id vix purto soluta quaerendum. Qui eu soluta prodesset. Eos graeci labitur mediocritatem ut. Harum tibique mei ea, vix ut zril mollis detracto, vel te mutat eleifend iudicabit.
+
+			Duo ut ullum falli disputationi, qui etiam errem corrumpit ad. Te his legere impedit. Mentitum sensibus consetetur mel ei, ad aeterno scribentur mei, duo te mutat sanctus ponderum. Nec ut dicta dicant option. Ad ullum consectetuer vel. Duo fuisset sapientem iracundia cu, eu has minim evertitur.
+			<li><a href="#top">top</a></li>
+		</div>
+
+				<div id="page5" class="component page page5">
+		  <a id="contact" class="smooth"></a>
+		   Lorem ipsum dolor sit amet, ne paulo dissentiunt vis. Mundi maiestatis per ne, id vix purto soluta quaerendum. Qui eu soluta prodesset. Eos graeci labitur mediocritatem ut. Harum tibique mei ea, vix ut zril mollis detracto, vel te mutat eleifend iudicabit.
+
+	Duo ut ullum falli disputationi, qui etiam errem corrumpit ad. Te his legere impedit. Mentitum sensibus consetetur mel ei, ad aeterno scribentur mei, duo te mutat sanctus ponderum. Nec ut dicta dicant option. Ad ullum consectetuer vel. Duo fuisset sapientem iracundia cu, eu has minim evertitur.
+
+	Lorem ipsum dolor sit amet, ne paulo dissentiunt vis. Mundi maiestatis per ne, id vix purto soluta quaerendum. Qui eu soluta prodesset. Eos graeci labitur mediocritatem ut. Harum tibique mei ea, vix ut zril mollis detracto, vel te mutat eleifend iudicabit.
+
+	Duo ut ullum falli disputationi, qui etiam errem corrumpit ad. Te his legere impedit. Mentitum sensibus consetetur mel ei, ad aeterno scribentur mei, duo te mutat sanctus ponderum. Nec ut dicta dicant option. Ad ullum consectetuer vel. Duo fuisset sapientem iracundia cu, eu has minim evertitur.
+
+	Lorem ipsum dolor sit amet, ne paulo dissentiunt vis. Mundi maiestatis per ne, id vix purto soluta quaerendum. Qui eu soluta prodesset. Eos graeci labitur mediocritatem ut. Harum tibique mei ea, vix ut zril mollis detracto, vel te mutat eleifend iudicabit.
+
+	Duo ut ullum falli disputationi, qui etiam errem corrumpit ad. Te his legere impedit. Mentitum sensibus consetetur mel ei, ad aeterno scribentur mei, duo te mutat sanctus ponderum. Nec ut dicta dicant option. Ad ullum consectetuer vel. Duo fuisset sapientem iracundia cu, eu has minim evertitur.
+			<li><a href="#top">top</a></li>
+		</div>
+	</div>
+</body>
+</html>

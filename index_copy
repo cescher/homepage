@@ -1,0 +1,81 @@
+<!doctype html>
+<head>
+	
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="jquery.smooth-scroll.js"></script>
+	<script>
+		  $(function() {
+		    $('a[href*="#"]:not([href="#"])').click(function() {
+		      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		        var target = $(this.hash);
+		        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		        if (target.length) {
+		          $('html, body').animate({
+		            scrollTop: target.offset().top
+		          }, 500);
+		          return false;
+		        }
+		      }
+		    });
+		  });
+	</script>
+</head>
+<div id="top">
+ 
+</div>
+
+<body>
+	
+
+	<div id="nav">
+	     <ul>
+	         <li><a href="#about">1</a></li>
+	         <li><a href="#portfolio">2</a></li>
+	         <li><a href="#contact">3</a></li>
+	     </ul>
+	</div>
+
+	
+	<div id="page1">
+	  <a id="about" class="smooth"></a>
+	   <blockquote>
+		    Lorem ipsum dolor sit amet, ne paulo dissentiunt vis. Mundi maiestatis per ne, id vix purto soluta quaerendum. Qui eu soluta prodesset. Eos graeci labitur mediocritatem ut. Harum tibique mei ea, vix ut zril mollis detracto, vel te mutat eleifend iudicabit.
+
+		</blockquote>
+	</div>
+	 
+	<div id="page2">
+	  <a id="portfolio" class="smooth"></a>
+	   Lorem ipsum dolor sit amet, ne paulo dissentiunt vis. Mundi maiestatis per ne, id vix purto soluta quaerendum. Qui eu soluta prodesset. Eos graeci labitur mediocritatem ut. Harum tibique mei ea, vix ut zril mollis detracto, vel te mutat eleifend iudicabit.
+
+Duo ut ullum falli disputationi, qui etiam errem corrumpit ad. Te his legere impedit. Mentitum sensibus consetetur mel ei, ad aeterno scribentur mei, duo te mutat sanctus ponderum. Nec ut dicta dicant option. Ad ullum consectetuer vel. Duo fuisset sapientem iracundia cu, eu has minim evertitur.
+
+Lorem ipsum dolor sit amet, ne paulo dissentiunt vis. Mundi maiestatis per ne, id vix purto soluta quaerendum. Qui eu soluta prodesset. Eos graeci labitur mediocritatem ut. Harum tibique mei ea, vix ut zril mollis detracto, vel te mutat eleifend iudicabit.
+
+Duo ut ullum falli disputationi, qui etiam errem corrumpit ad. Te his legere impedit. Mentitum sensibus consetetur mel ei, ad aeterno scribentur mei, duo te mutat sanctus ponderum. Nec ut dicta dicant option. Ad ullum consectetuer vel. Duo fuisset sapientem iracundia cu, eu has minim evertitur.
+
+Lorem ipsum dolor sit amet, ne paulo dissentiunt vis. Mundi maiestatis per ne, id vix purto soluta quaerendum. Qui eu soluta prodesset. Eos graeci labitur mediocritatem ut. Harum tibique mei ea, vix ut zril mollis detracto, vel te mutat eleifend iudicabit.
+
+Duo ut ullum falli disputationi, qui etiam errem corrumpit ad. Te his legere impedit. Mentitum sensibus consetetur mel ei, ad aeterno scribentur mei, duo te mutat sanctus ponderum. Nec ut dicta dicant option. Ad ullum consectetuer vel. Duo fuisset sapientem iracundia cu, eu has minim evertitur.
+
+	</div>
+	 
+	<div id="page3">
+	  <a id="contact" class="smooth"></a>
+	   Lorem ipsum dolor sit amet, ne paulo dissentiunt vis. Mundi maiestatis per ne, id vix purto soluta quaerendum. Qui eu soluta prodesset. Eos graeci labitur mediocritatem ut. Harum tibique mei ea, vix ut zril mollis detracto, vel te mutat eleifend iudicabit.
+
+Duo ut ullum falli disputationi, qui etiam errem corrumpit ad. Te his legere impedit. Mentitum sensibus consetetur mel ei, ad aeterno scribentur mei, duo te mutat sanctus ponderum. Nec ut dicta dicant option. Ad ullum consectetuer vel. Duo fuisset sapientem iracundia cu, eu has minim evertitur.
+
+Lorem ipsum dolor sit amet, ne paulo dissentiunt vis. Mundi maiestatis per ne, id vix purto soluta quaerendum. Qui eu soluta prodesset. Eos graeci labitur mediocritatem ut. Harum tibique mei ea, vix ut zril mollis detracto, vel te mutat eleifend iudicabit.
+
+Duo ut ullum falli disputationi, qui etiam errem corrumpit ad. Te his legere impedit. Mentitum sensibus consetetur mel ei, ad aeterno scribentur mei, duo te mutat sanctus ponderum. Nec ut dicta dicant option. Ad ullum consectetuer vel. Duo fuisset sapientem iracundia cu, eu has minim evertitur.
+
+Lorem ipsum dolor sit amet, ne paulo dissentiunt vis. Mundi maiestatis per ne, id vix purto soluta quaerendum. Qui eu soluta prodesset. Eos graeci labitur mediocritatem ut. Harum tibique mei ea, vix ut zril mollis detracto, vel te mutat eleifend iudicabit.
+
+Duo ut ullum falli disputationi, qui etiam errem corrumpit ad. Te his legere impedit. Mentitum sensibus consetetur mel ei, ad aeterno scribentur mei, duo te mutat sanctus ponderum. Nec ut dicta dicant option. Ad ullum consectetuer vel. Duo fuisset sapientem iracundia cu, eu has minim evertitur.
+		<li><a href="#top">top</a></li>
+	</div>
+</body>
+</html>
